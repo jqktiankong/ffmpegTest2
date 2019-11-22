@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable name="view" type="com.jqk.first.MainActivity"/>
+    </data>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            <Button
+                    android:id="@+id/urlprotocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{view::urlprotocol}"
+                    android:text="urlprotocol"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="avformat"
+                    android:onClick="@{view::avformat}"
+                    android:id="@+id/avformat"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="avcodec"
+                    android:onClick="@{view::avcodec}"
+                    android:id="@+id/avcodec"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="avfilter"
+                    android:onClick="@{view::avfilter}"
+                    android:id="@+id/avfilter"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="configuration"
+                    android:onClick="@{view::configuration}"
+                    android:id="@+id/configuration"/>
+        </LinearLayout>
+
+        <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/message"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
