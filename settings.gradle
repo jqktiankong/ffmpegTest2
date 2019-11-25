@@ -1,1 +1,1 @@
-include ':app', ':first', ':cmd'
+include ':app', ':first', ':cmd', ':record'
